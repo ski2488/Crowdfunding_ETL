@@ -1,0 +1,43 @@
+
+
+campaign
+-
+cf_id PK int
+contact_id int FK >- contacts.contact_id
+company_name varchar
+description varchar
+goal dec
+pledged dec
+outcome varchar
+backers_count int	
+country varchar(2)
+currency varchar(3)	
+launched_date date
+end_date date
+staff_pick boolean
+spotlight boolean
+category_sub-category varchar
+category varchar
+sub-category varchar
+category_id varchar FK >- category.category_id
+subcategory_id varchar FK >- subcategory.subcategory_id
+
+contacts
+-
+contact_id PK int
+first_name varchar
+last_name varchar
+email varchar
+
+category
+-
+category_id PK varchar	
+category varchar
+
+subcategory
+-
+subcategory_id PK varchar
+subcategory varchar
+
+
+
